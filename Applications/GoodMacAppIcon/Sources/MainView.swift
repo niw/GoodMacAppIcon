@@ -37,11 +37,11 @@ struct MainView: View {
                         .frame(width: 128.0, height: 128.0)
                         .padding(40.0)
                         .background {
-                            RoundedRectangle(cornerRadius: 20.0)
+                            RoundedRectangle(cornerRadius: 48.0, style: .continuous)
                                 .stroke(style: StrokeStyle(
                                     lineWidth: 8.0,
                                     lineCap: .round,
-                                    dash: [10.0, 22.0]
+                                    dash: [10.0, 20.0]
                                 ))
                         }
                         .foregroundStyle(isDropTargeted ? .secondary : .tertiary)
