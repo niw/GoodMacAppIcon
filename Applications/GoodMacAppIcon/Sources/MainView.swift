@@ -33,19 +33,18 @@ struct MainView: View {
                     Image("app")
                         .resizable()
                         .renderingMode(.template)
-                        .foregroundStyle(.white)
                         .scaledToFit()
                         .frame(width: 128.0, height: 128.0)
                         .padding(40.0)
                         .background {
-                            RoundedRectangle(cornerRadius: 20.0)
+                            RoundedRectangle(cornerRadius: 48.0, style: .continuous)
                                 .stroke(style: StrokeStyle(
                                     lineWidth: 8.0,
                                     lineCap: .round,
-                                    dash: [10.0, 22.0]
+                                    dash: [10.0, 20.0]
                                 ))
                         }
-                        .opacity(isDropTargeted ? 0.8 : 0.4)
+                        .foregroundStyle(isDropTargeted ? .secondary : .tertiary)
                 }
             }
             if let goodAppIconProbability {
@@ -53,7 +52,7 @@ struct MainView: View {
                     Circle()
                         .frame(height: 20.0)
                         .foregroundColor(goodAppIconProbability >= 0.5 ? .green : .red)
-                    Text(String(format: "%0.4f%%", goodAppIconProbability * 100))
+                    Text(goodAppIconProbability, format: .percent.precision(.fractionLength(4)))
                         .font(.largeTitle)
                         .bold()
                 }
