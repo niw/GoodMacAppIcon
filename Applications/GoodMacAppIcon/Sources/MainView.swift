@@ -33,7 +33,6 @@ struct MainView: View {
                     Image("app")
                         .resizable()
                         .renderingMode(.template)
-                        .foregroundStyle(.white)
                         .scaledToFit()
                         .frame(width: 128.0, height: 128.0)
                         .padding(40.0)
@@ -45,7 +44,7 @@ struct MainView: View {
                                     dash: [10.0, 22.0]
                                 ))
                         }
-                        .opacity(isDropTargeted ? 0.8 : 0.4)
+                        .foregroundStyle(isDropTargeted ? .secondary : .tertiary)
                 }
             }
             if let goodAppIconProbability {
