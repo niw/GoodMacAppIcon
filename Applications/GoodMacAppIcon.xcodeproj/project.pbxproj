@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		544F0E662C12B97100C3C49F /* GoodMacAppIconCore in Frameworks */ = {isa = PBXBuildFile; productRef = 544F0E652C12B97100C3C49F /* GoodMacAppIconCore */; };
+		544F0E682C12BA6A00C3C49F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544F0E672C12BA6A00C3C49F /* Service.swift */; };
+		546F28462C12B7E6007B884C /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546F28452C12B7E6007B884C /* MainApp.swift */; };
+		546F28482C12B7E6007B884C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546F28472C12B7E6007B884C /* MainView.swift */; };
+		546F284A2C12B7E7007B884C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546F28492C12B7E7007B884C /* Assets.xcassets */; };
+		546F284D2C12B7E7007B884C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546F284C2C12B7E7007B884C /* Preview Assets.xcassets */; };
+		54F7B52B2C12CAB300B07BED /* ModelCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F7B52A2C12CAB300B07BED /* ModelCache.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		544F0E622C12B91900C3C49F /* GoodMacAppIcon */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = GoodMacAppIcon; path = ..; sourceTree = "<group>"; };
+		544F0E672C12BA6A00C3C49F /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		546F28422C12B7E6007B884C /* GoodMacAppIcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodMacAppIcon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		546F28452C12B7E6007B884C /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
+		546F28472C12B7E6007B884C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		546F28492C12B7E7007B884C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		546F284C2C12B7E7007B884C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		54F7B52A2C12CAB300B07BED /* ModelCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCache.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		546F283F2C12B7E6007B884C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544F0E662C12B97100C3C49F /* GoodMacAppIconCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		544F0E5F2C12B8B900C3C49F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				546F28452C12B7E6007B884C /* MainApp.swift */,
+				546F28472C12B7E6007B884C /* MainView.swift */,
+				544F0E672C12BA6A00C3C49F /* Service.swift */,
+				54F7B52A2C12CAB300B07BED /* ModelCache.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		544F0E602C12B8BE00C3C49F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				546F284B2C12B7E7007B884C /* Preview Content */,
+				546F28492C12B7E7007B884C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		544F0E612C12B8FB00C3C49F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				544F0E622C12B91900C3C49F /* GoodMacAppIcon */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		544F0E642C12B97100C3C49F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		546F28392C12B7E6007B884C = {
+			isa = PBXGroup;
+			children = (
+				546F28442C12B7E6007B884C /* GoodMacAppIcon */,
+				544F0E612C12B8FB00C3C49F /* Packages */,
+				546F28432C12B7E6007B884C /* Products */,
+				544F0E642C12B97100C3C49F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		546F28432C12B7E6007B884C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				546F28422C12B7E6007B884C /* GoodMacAppIcon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		546F28442C12B7E6007B884C /* GoodMacAppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				544F0E602C12B8BE00C3C49F /* Resources */,
+				544F0E5F2C12B8B900C3C49F /* Sources */,
+			);
+			path = GoodMacAppIcon;
+			sourceTree = "<group>";
+		};
+		546F284B2C12B7E7007B884C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				546F284C2C12B7E7007B884C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		546F28412C12B7E6007B884C /* GoodMacAppIcon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 546F28512C12B7E7007B884C /* Build configuration list for PBXNativeTarget "GoodMacAppIcon" */;
+			buildPhases = (
+				546F283E2C12B7E6007B884C /* Sources */,
+				546F283F2C12B7E6007B884C /* Frameworks */,
+				546F28402C12B7E6007B884C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoodMacAppIcon;
+			packageProductDependencies = (
+				544F0E652C12B97100C3C49F /* GoodMacAppIconCore */,
+			);
+			productName = GoodMacAppIcon;
+			productReference = 546F28422C12B7E6007B884C /* GoodMacAppIcon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		546F283A2C12B7E6007B884C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					546F28412C12B7E6007B884C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 546F283D2C12B7E6007B884C /* Build configuration list for PBXProject "GoodMacAppIcon" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 546F28392C12B7E6007B884C;
+			productRefGroup = 546F28432C12B7E6007B884C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				546F28412C12B7E6007B884C /* GoodMacAppIcon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		546F28402C12B7E6007B884C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				546F284D2C12B7E7007B884C /* Preview Assets.xcassets in Resources */,
+				546F284A2C12B7E7007B884C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		546F283E2C12B7E6007B884C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F7B52B2C12CAB300B07BED /* ModelCache.swift in Sources */,
+				546F28482C12B7E6007B884C /* MainView.swift in Sources */,
+				546F28462C12B7E6007B884C /* MainApp.swift in Sources */,
+				544F0E682C12BA6A00C3C49F /* Service.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		546F284F2C12B7E7007B884C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		546F28502C12B7E7007B884C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		546F28522C12B7E7007B884C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoodMacAppIcon/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Good Mac App Icon";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = at.niw.GoodMacAppIcon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		546F28532C12B7E7007B884C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoodMacAppIcon/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Good Mac App Icon";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = at.niw.GoodMacAppIcon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		546F283D2C12B7E6007B884C /* Build configuration list for PBXProject "GoodMacAppIcon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				546F284F2C12B7E7007B884C /* Debug */,
+				546F28502C12B7E7007B884C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		546F28512C12B7E7007B884C /* Build configuration list for PBXNativeTarget "GoodMacAppIcon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				546F28522C12B7E7007B884C /* Debug */,
+				546F28532C12B7E7007B884C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		544F0E652C12B97100C3C49F /* GoodMacAppIconCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GoodMacAppIconCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 546F283A2C12B7E6007B884C /* Project object */;
+}

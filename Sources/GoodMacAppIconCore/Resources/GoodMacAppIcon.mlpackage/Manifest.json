@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "616453CD-F36E-4FA7-BB76-3CA6ACC2B5DD": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        },
+        "64F3D647-E872-4477-8E88-5A848E783145": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "goodmacosicon.mlmodel",
+            "path": "com.apple.CoreML/goodmacosicon.mlmodel"
+        },
+        "9E544409-AD67-4896-A662-895D50C4BA31": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        }
+    },
+    "rootModelIdentifier": "64F3D647-E872-4477-8E88-5A848E783145"
+}
