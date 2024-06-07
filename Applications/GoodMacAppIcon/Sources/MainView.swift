@@ -53,7 +53,7 @@ struct MainView: View {
                     Circle()
                         .frame(height: 20.0)
                         .foregroundColor(goodAppIconProbability >= 0.5 ? .green : .red)
-                    Text(String(format: "%0.4f%%", goodAppIconProbability * 100))
+                    Text(goodAppIconProbability, format: .percent.precision(.fractionLength(4)))
                         .font(.largeTitle)
                         .bold()
                 }
