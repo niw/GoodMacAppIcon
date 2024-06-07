@@ -44,8 +44,8 @@
 			children = (
 				546F28452C12B7E6007B884C /* MainApp.swift */,
 				546F28472C12B7E6007B884C /* MainView.swift */,
-				544F0E672C12BA6A00C3C49F /* Service.swift */,
 				54F7B52A2C12CAB300B07BED /* ModelCache.swift */,
+				544F0E672C12BA6A00C3C49F /* Service.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";

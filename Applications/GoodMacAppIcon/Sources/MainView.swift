@@ -5,6 +5,7 @@
 //  Created by Yoshimasa Niwa on 6/6/24.
 //
 
+import GoodMacAppIconCore
 import SwiftUI
 import UniformTypeIdentifiers
 
@@ -64,19 +65,16 @@ struct MainView: View {
             }
         }
         .padding(40.0)
-        // TODO: Use .application UTType, .image, and also use Transferrable
-        .onDrop(of: [
-            .fileURL
-        ], isTargeted: $isDropTargeted) { providers in
+        .onDrop(of: TransferrableAppIcon.supportedContentTypes, isTargeted: $isDropTargeted) { providers in
             guard let provider = providers.first else {
                 return false
             }
-            _ = provider.loadObject(ofClass: URL.self) { url, error in
-                guard let url else {
+            _ = provider.loadTransferable(type: TransferrableAppIcon.self) { result in
+                guard case .success(let appIcon) = result else {
                     return
                 }
                 Task { @MainActor in
-                    appIconImage = NSWorkspace.shared.icon(forFile: url.path(percentEncoded: false))
+                    self.appIconImage = appIcon.image
                 }
             }
             return true
