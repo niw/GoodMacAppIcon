@@ -14,19 +14,19 @@ public final class GoodMacAppIconModel {
         case failed(reason: String)
     }
 
-    private let goodMacIcon: GoodMacAppIcon
+    private let goodMacAppIcon: GoodMacAppIcon
 
     public init() throws {
         let configuration = MLModelConfiguration()
         configuration.computeUnits = .all
-        goodMacIcon = try GoodMacAppIcon(configuration: configuration)
+        goodMacAppIcon = try GoodMacAppIcon(configuration: configuration)
     }
 
     public func probability(image: CIImage) async throws -> Double {
         let inputImage = try image.renderPixelBuffer()
         let input = GoodMacAppIconInput(image: inputImage)
 
-        let output = try await goodMacIcon.prediction(input: input)
+        let output = try await goodMacAppIcon.prediction(input: input)
 
         guard let probability = output.targetProbability["good"] else {
             throw Error.failed(reason: "No probability for good target.")

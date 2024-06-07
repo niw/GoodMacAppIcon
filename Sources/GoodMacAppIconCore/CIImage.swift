@@ -5,20 +5,13 @@
 //  Created by Yoshimasa Niwa on 6/6/24.
 //
 
-import AppKit
 import CoreImage
+import CoreVideo
 import Foundation
 
 extension CIImage {
     private enum Error: Swift.Error {
         case failed(reason: String)
-    }
-
-    public var asNSImage: NSImage {
-        let rep = NSCIImageRep(ciImage: self)
-        let image = NSImage(size: rep.size)
-        image.addRepresentation(rep)
-        return image
     }
 
     public func renderPixelBuffer() throws -> CVPixelBuffer {
